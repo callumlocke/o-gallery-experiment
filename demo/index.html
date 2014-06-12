@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>o-gallery custom element demo</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="import" href="../dist/o-gallery.html">
+</head>
+<body>
+
+
+<!-- Main gallery -->
+<o-gallery id="my-main-gallery" x-captionminheight="30" x-captionmaxheight="50">
+    <x-title>Ukraine: diplomacy and tension</x-title>
+
+    <x-item>
+        <x-content>
+            <img src="http://im.ft-static.com/content/images/c6bb1407-b0fc-4cc6-8f9f-af838349595e.img">
+        </x-content>
+        <x-caption>
+            Ukrainian soldiers guard a gate of an infantry base in Privolnoye, Ukraine
+        </x-caption>
+    </x-item>
+
+    <x-item x-selected>
+        <x-content>
+            <img src="http://im.ft-static.com/content/images/ed8abc52-eb10-4cd2-91ae-ba0ddc88863e.img">
+        </x-content>
+        <x-caption>
+            A Russian flag flies behind armed personnel on top of a Russian army
+            vehicle outside a Ukrainian border guard post in Balaclava
+        </x-caption>
+    </x-item>
+
+    <x-item>
+        <x-content>
+            <img src="http://im.ft-static.com/content/images/05c4639c-9023-4239-b8c1-63ade8e0e230.img">
+        </x-content>
+        <x-caption>
+            A Russian convoy heads towards Simferopol, the regional capital of
+            Ukraine’s Crimea region
+        </x-caption>
+    </x-item>
+</o-gallery>
+
+<!-- Thumbnails gallery (syncs itself to the main gallery via x-sync attr) -->
+<o-gallery x-sync="my-main-gallery" x-multipleitemsperpage>
+    <x-item>
+        <x-content>
+            <img src="http://im.ft-static.com/content/images/bf78da6c-8e79-493a-8af6-11db6ee66666.img">
+        </x-content>
+    </x-item>
+    <x-item>
+        <x-content>
+            <img src="http://im.ft-static.com/content/images/5cc3255f-a5aa-402a-9304-a2dded21ae74.img">
+        </x-content>
+    </x-item>
+    <x-item>
+        <x-content>
+            <img src="http://im.ft-static.com/content/images/66c8be19-8448-46b9-8eb7-1cb322af1192.img">
+        </x-content>
+    </x-item>
+</o-gallery>
+
+
+</body>
+</html>

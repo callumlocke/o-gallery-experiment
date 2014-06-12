@@ -1,0 +1,17 @@
+{
+  "name": "origami-custom-elements",
+  "version": "0.0.0",
+  "devDependencies": {
+    "gulp": "~3.6.2",
+    "gulp-load-plugins": "~0.5.1",
+    "gulp-ruby-sass": "~0.5.0",
+    "gulp-inline-source": "0.0.2",
+    "browserify": "~4.1.5",
+    "vinyl-source-stream": "~0.1.1",
+    "debowerify": "~0.7.1",
+    "gulp-file-insert": "~1.0.2",
+    "gulp-uglify": "~0.3.0",
+    "gulp-csso": "~0.2.8",
+    "gulp-buffer": "0.0.2"
+  }
+}
